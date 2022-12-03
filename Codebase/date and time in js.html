@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Date and time in JS </title>
+    <style>
+        .con{
+            font-size: 30px;
+    background-color: darkblue;
+    color: whitesmoke;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: 70%;
+    text-align: center;
+    font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+
+        Current time is <span id="time"> </span>
+    </div>
+    <script>
+        console.log("This is date and time tutorial");
+        let tut = new Date();
+        console.log(tut);
+
+        let base = new Date(20000);
+        console.log(base);
+
+        // if we put nothinf inside the paranthesis, the function will show current date & if we put 0 inside the paranthesis it will show base time, and if we put 1000 inside paranthesis , it will show +1 second with reference to base time . 
+
+        let future = new Date("2024-02-29");
+        console.log(future);
+
+        // full-flex syntax :-
+        // let newDate = newDate(year, month, date, hours, minutes, seconds, milliseconds);
+
+        let full = new Date(2039, 01, 12, 23, 40, 59, 0000);
+        console.log(full);
+
+        let yr = full.getFullYear();
+        console.log(yr);
+
+        let month = full.getMonth();
+        console.log(month);
+
+        let dt = full.getDate();
+        console.log("date is ", dt);
+
+        let ms = full.getMilliseconds();
+        console.log(ms);
+
+        full.setDate(19);
+        console.log(full);
+
+        full.setMonth(4);
+        console.log(full);
+
+        //  Writing Date.now() in console will give time spent from base date.
+
+        setInterval(UpdateTime, 1000);
+        function UpdateTime() {
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+
+</html>

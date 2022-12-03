@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta  charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors and more designing</title>
+    <style>
+        .container {
+            border: 2px solid chocolate;
+            background-color: rgb(222, 235, 212);
+            padding: 45px;
+            margin: 45px auto;
+            width: 666px;
+        }
+
+        .btn {
+            /* background: rgb(224, 148, 212); */
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 22px;
+            border-radius: 11px;
+        }
+
+        a {
+            text-decoration: none;
+            color: firebrick;
+        }
+
+        /* use of hover command is that if you take ur pointer on that word then what changes you want there  */
+        a:hover {
+            color: rgb(236, 210, 65);
+            background-color: rgb(209, 186, 127);
+        }
+
+        /* visited command start operating when when we visit website once  */
+        a:visited {
+            color: rgb(39, 12, 136);
+        }
+
+        a:active{}
+
+        .btn {
+            color: tomato;
+            /* background-color: rgb(202, 199, 226); */
+        }
+
+        .btn:hover {
+            color: rgb(148, 9, 127);
+            background-color: rgb(216, 108, 211);
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        
+            <h1>this is good</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quibusdam reprehenderit magni omnis at
+                repellendus placeat quaerat, nostrum, quia, velit quod explicabo. Tempore nam, modi aut quibusdam at
+                possimus
+                tenetur autem praesentium nobis ipsum commodi eius. Consequuntur at neque quas placeat repellat
+                consectetur,
+                laboriosam sunt?</p>
+            <a href="https://google.com" class="btn">read more</a>
+            <button class="btn"> contact us</button>
+      
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom properties variables in CSS</title>
+    <style>
+
+:root{
+    --primary-color: khaki;
+    --danger-color: red;
+    maxwi :33px;
+}
+.box{
+    /* --box-color :- this property is used to use same color for various places like local variable  */
+    /* --box-color: violet; */
+    height: 30vh;
+    width: 170px;
+    background-color:var(--danger-color);
+    border: 2px solid green;
+    margin: 20px;
+}
+  
+.container{
+    max-width: var(--maxwi);
+    margin: auto;
+    /* --box-color: green; */
+display: flex;
+background-color: var(--primary-color);
+}
+</style>
+</head>
+
+
+<body>
+<div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+</body>
+
+</html>

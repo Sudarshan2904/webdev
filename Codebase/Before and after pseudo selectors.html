@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Before and After pseudo selectors</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    header::before {
+        content: "";
+        background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+    }
+
+    header:: before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+
+    html {
+        font-size: 20px;
+    }
+
+    section {
+        display: flex;
+        height: 50vh;
+        width: 80vw;
+        flex-direction: column;
+        margin: 3px 60px;
+        /* border: 2px solid red; */
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        color: turquoise;
+    }
+
+    .navigation {
+        display: flex;
+        /* font-size: 25px; */
+        font-family: 'Chelsea Market', cursive;
+    }
+
+    .navbar {
+        font-size: 25px;
+    }
+
+    li {
+        list-style: none;
+        padding: 20px 25px;
+        color: yellow;
+    }
+
+    /* section::before{
+        content:"this is before content"
+    } */
+
+    section::after {
+        content: "this is after content"
+    }
+
+    nav ul li {
+        font-size: 2rem;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About Us</li>
+                <li class="item"> Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to wine city</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio soluta, iusto cupiditate, dolorem facere
+            impedit earum sint nesciunt sunt quam voluptatibus corporis quibusdam cumque?</p>
+    </section>
+    <hr>
+</body>
+
+</html>

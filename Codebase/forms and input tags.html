@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Forms in HTML</title>
+
+</head>
+
+<body>
+    <form action="backend.php">
+
+        <label for="name"> Name</label>
+        <div>
+             <input type="text" name="myName" id="name">
+        </div>
+        <br>
+
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+
+        <div>
+            Date:  <input type="date" name="myDate" id="">
+        </div>
+        <br>
+
+        <!-- <label for="check"> Are You Eligible:</label> -->
+        <div>
+           Which is favourite food: 
+           <input type="checkbox" name="one" value="apple" checked> apple
+             <input type="checkbox" name="one" value="mango"> mango
+        </div>
+        <br>
+
+        <div>
+            <label for="cars"> Cars</label>
+            <select name="myCars" id="cars">
+                <option value="mar"> Marazzo</option>
+                <option value="swf"> Swift</option>
+                <option value="AudiA8L" selected> AudiA8L</option>
+<!-- this is called a s dropdown list -->
+            </select>
+        </div>
+
+        <div>
+            Gender: Male <input type="radio" name="myGender" checked > Female <input type="radio" name= "myGender" > Other <input type="radio" name="myGender">
+        </div>
+        <br>
+        
+       <div>
+         Bonus: <input type="number" name="" id="">
+         </div>
+        <br>
+
+        <div>
+         Write in short about yourself: <br>  <textarea name="" id="" cols="20" rows="2"></textarea>
+        </div>
+        
+        <div>
+            <input type="submit" value="Submit Now">
+        </div>
+        <br>
+
+        <div>
+           <input type="reset" value="Reset Now">
+        </div>
+        <br>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Keyframes and animations </title>
+    <style>
+        .container {
+            background-color: rgb(127, 231, 235);
+        }
+
+        .box {
+            background-color: rgb(173, 241, 146);
+            width: 300px;
+            height: 250px;
+            position: relative;
+
+            /* animation-name: sudi01;  */
+            animation-name: sudi02;
+
+            animation-duration: 6s;
+            /* we can put ms  also  */
+
+            animation-iteration-count: 4;
+            /* if we want infinite times the animation to run, then we can use animation-iteration-count: infinite;  */
+
+            animation-fill-mode: forwards;
+            /* if we  want, at the end of animation the property should remained sticked to "to"'s property, then  animation-fill-mode: forwards; is used  */
+            animation-fill-mode: alternate;
+
+            animation-timing-function: ease-in;
+            /* if we want animation to run fast at the start of animation and its speed goes down as animation tends to end then animation-timing-function: ease-in; is used, and vice-versa for ease-out  */
+            animation-timing-function: ease-out;
+            animation-timing-function: ease-in-out;
+            /* in case of  animation-timing-function: ease-in-out; animation starts and ends slowly, simple!!!  */
+
+            /* animation-delay: 3s; */
+
+            /* animation-direction:alternate-reverse; */
+
+            /* Shorthand for animation is :-
+            animation: animation-name  animation-duration  animation-timing-function  animation-delay  animation-iteration-count   animation-fill-mode;  */
+            /* animation: sudi01 5s ease-out 2s 5 forwards; */
+
+        }
+
+
+
+        @keyframes sudi02 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 250px;
+            }
+        }
+
+
+
+
+        @keyframes sudi01 {
+            from {
+                width: 150px;
+            }
+
+            to {
+                width: 550px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">this is a Sudcoder</div>
+    </div>
+</body>
+
+</html>

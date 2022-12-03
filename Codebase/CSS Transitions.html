@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS transitioms</title>
+    <style>
+
+        body{
+            background-color: black;
+        }
+
+        h3{
+            color: white;
+        }
+.box{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    /* padding: 150px 33px; */
+    background-color: rgb(245, 22, 14);
+
+    /* transition-property: background-color width height font-size; */
+    /* this is one way to write */
+
+    /* if we want all properties of box get transformed, then just put "all" in the syntax  */
+    transition-duration: 5s;
+    transition-timing-function:ease-out;
+    transition-delay: 3s;
+
+   /* Transition shorthand property's syntax :- transition: background-color  Transition duration  Transition-timing-function  Transition-delay */
+   transition: all 3s ease-in 0.4s;
+   /* this is another way to write  */
+  }
+
+.box:hover{
+    background-color:white;
+    height: 600px;
+    width: 550px;
+    font-size: 30px;
+    border-radius: 200px;
+}
+    </style>
+</head>
+<body>
+    <h3>This is CSS which is interesting language</h3>
+    <div class="container">
+        <div class="box">
+            This is web development era bro...keep in mind
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in CSS</title>
+    <style>
+        /* Types of position in CSS are Static(by default), relative, absolute, fixed, sticky */
+        .box {
+
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 0px 0px 0px 60px;
+            display: inline-block;
+        }
+
+        .container {
+            border: 9px solid black;
+            background-color: rgb(243, 220, 14);
+            padding: 43px;
+            /* margin: 45px; */
+            border-radius: 5px;
+            height: 1500px;
+        }
+
+        #box3 {
+            /* relative: relative to its normal position  */
+            /* position: relative;
+            top: 23px;
+            left: 75px; */
+
+            /* absolute: Relative to the position of its first parent( Here in this case, parent is taken container) */
+            position: absolute;
+            top: 23px;
+            left: 75px;
+
+
+        }
+
+        #box4{ 
+            /* position : fixed,position relative to the browsing window */
+            /* position: fixed;
+            right: 24px; */
+
+            position: sticky;
+            top: 5px;
+
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">A</div>
+        <div class="box" id="box2">B</div>
+        <div class="box" id="box3">C</div>
+        <div class="box" id="box4">Doing something best</div>
+    </div>
+
+</body>
+
+</html>

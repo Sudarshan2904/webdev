@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Transform Property</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            background-color: rgb(216, 235, 45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;
+
+        }
+
+        .box {
+            border: 2px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(224, 211, 211);
+            border-radius: 8px;
+            height: 300px;
+            width: 250px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .box:hover {
+            /* transform:skew(40deg); */
+            /* transform: rotate(360deg); */
+            /* transform:scale(2); */
+            /* transform:translateY(200px); */
+            /* transform:translateX(200px); */
+            transform: translate(200px , 200px);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is best
+        </div>
+    </div>
+</body>
+
+</html>

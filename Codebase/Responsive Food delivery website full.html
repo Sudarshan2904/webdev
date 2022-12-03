@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Food Delivery Website</title>
+
+    <style>
+        #home::before {
+            content: "";
+            background: url('img/plate food.jpg') no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 642px;
+            /* top: 0px;
+            left: 0px; */
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url('img/spoon handler.jpg') no-repeat center center/cover;
+            width: 100%;
+            height: 374px;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        #contact::before {
+            content: "";
+            position: absolute;
+            background: url('img/contact us.jpg') no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+    </style>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width:800px )" href="CSS/phone.css">
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Piedra&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/Mcdonald logo.png" alt="error">
+        </div>
+        <ul>
+            <li class="item"> <a href="#home">Home </a> </li>
+            <li class="item"> <a href="#services"> Our Services </a> </li>
+            <li class="item"> <a href="#client-section"> Our Clients </a> </li>
+            <li class="item"> <a href="#contact"> Contact Us </a> </li>
+        </ul>
+    </nav>
+
+
+    <section id="home">
+        <h1 class="h-primary"> Welcome to Mcdonald's Online Meal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eum provident ea, quaerat mollitia fugit
+            praesentium laboriosam ipsa magni repellendus.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima vel alias quae, fuga voluptatibus eius
+            consequatur .</p>
+        <button class="btn">Order Now </button>
+    </section><br><br>
+
+    <section class="services-container">
+        <h2 class="h-primary center">Our Services</h2>
+        <div id="services">
+
+            <div class="box">
+                <img src="img/pizza1.jpg" alt="">
+                <h2 class="h-secondary center">Breakfast/Mini Diet </h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorem
+                    doloremque, alias harum
+                    animi voluptas est incidunt expedita, autem repellendus quos enim aperiam.</p>
+            </div>
+
+            <div class="box">
+                <img src="img/veg full indian.jpg" alt="">
+                <h2 class="h-secondary center">Bulk Ordering </h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorem
+                    doloremque, alias harum
+                    animi voluptas est incidunt expedita, autem repellendus quos enim aperiam.</p>
+            </div>
+
+            <div class="box">
+                <img src="img/delivery boy.jpg" alt="">
+                <h2 class="h-secondary center">Food Ordering </h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorem
+                    doloremque, alias harum
+                    animi voluptas est incidunt expedita, autem repellendus quos enim aperiam.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+
+            <div class="client-item">
+                <img src="img/apple logo.png" alt="">
+            </div>
+
+            <div class="client-item">
+                <img src="img/adidas logo.png" alt="">
+            </div>
+
+            <div class="client-item">
+                <img src="img/microsoft logo.png" alt="">
+            </div>
+
+            <div class="client-item">
+                <img src="img/audi.jpg" alt="">
+            </div>
+
+            <div class="client-item">
+                <img src="img/skype logo.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" placeholder="Enter Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email"> E-mail: </label>
+                    <input type="text" id="email" placeholder="Enter Your E-mail">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="text" id="phone" placeholder="Enter Your Phone Number">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address: </label>
+                </div><textarea name="Address" id="" cols="30" rows="10"> Enter Your Address</textarea>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy; www.MyOnlineMeal.com. All Rights Reserved!
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

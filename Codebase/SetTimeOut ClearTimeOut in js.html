@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS settimeout and cleartimeout </title>
+</head>
+
+<body>
+    <div class="con">
+        time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("Live server has been started");
+
+        SetTimeout :- Alows us to run a function once after a interval of time
+        SetInterval :- Alows us to run a function repeatedly after a interval of time
+
+
+        // 1] settimeout syntax :
+        function god(name, caring) {
+            console.log("good Morning " + name + " " + caring);
+        }
+        // setTimeout(god, 5000, "Sudarshan", "Have a nice one");
+
+        // setTimeout(god(), 5000, "Sudarshan", "Have a nice one");
+        // This line will not be executed since its wrong calling a function inside paranthesis. 
+
+
+        // 2] cleartimeout syntax :
+        // function god(name, caring) {
+        //     console.log("good Morning " + name + " " + caring);
+        // }
+        // timeout = setTimeout(god, 5000, "Sudarshan", "Have a nice one");
+        // console.log(timeout);
+
+        // clearTimeout(timeout);
+
+        // setInterval syntax : 
+        // setInterval(god, 1000, "Empire", "Should we go to buy audi A7");
+
+
+        // clearinterval syntax: 
+        intervalId = setInterval(god, 1000, "Empire", "Should we go to buy audi A7");
+        clearInterval(intervalId);
+
+        function showtime() {
+            date = new Date();
+            console.log(date);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(showtime, 1500);
+
+    </script>
+</body>
+
+</html>

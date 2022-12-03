@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font size units with responsive design</title>
+    <style>
+        html {
+            font-size: 25px;
+        }
+
+        .container {
+            font-size: 8px;
+            border: 2px solid yellowgreen;
+            height: 100vh;
+            /* same as height: 50%;  */
+            width: 100vw;
+            /* same as width: 20%;  */
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+            /* font-size: 3em; */
+            /* So, text in id first will become thrice the size of container  */
+            /* padding: 4em; */
+            /* Whenever we give padding, it becomes given padding*font-size of item * font-size of container (em font specification) */
+        }
+
+        #second {
+            /* font-size: 4rem; */
+            /* padding: 5rem; */
+        }
+
+        /* rem is used when we want to change font size of all content inside the parent relatively equal with the parent  */
+        /* important article to know the difference between em and rem is :comprehensive guide to em and rem(google ) */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is Web Development Era 01</h1>
+        <h1 id="second">This is Web Development Era 02</h1>
+        <h1 id="third">This is Web Development Era 03</h1>
+    </div>
+</body>
+<!-- Various ways to achieve responsive design:
+1) Setting up the view port.
+2) Use max width/ max height.
+3) Using CSS media queries.
+4) Using rem/vh/vw units over pixels. -->
+
+</html>

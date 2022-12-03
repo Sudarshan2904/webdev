@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Event Listeners in JS</title>
+    <style>
+        #btn {
+            padding: 3px 9px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Browser events :
+    click
+    contextmenu
+    mouseover/ mouseout
+    mousedown/ mouseup
+    mousemove
+
+    submit
+    focus
+
+    DOMcontentloaded
+
+    Transitionend  -->
+
+    <div class="con">
+        <h1 id="sud"> This is Event Listeners tutorial </h1>
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam repellat ex delectus quod illo
+            ducimus commodi alias iure aliquid nemo possimus pariatur, soluta rerum recusandae impedit ut porro
+            molestias dicta fugit rem! Consequatur quia soluta non modi, fugiat odit quos culpa repudiandae et, odio
+            aspernatur. Odio veniam deleniti explicabo. Natus, consequuntur! Obcaecati, praesentium labore numquam
+            consequuntur facilis eum est. Non sed ab laudantium ex laboriosam amet assumenda nostrum et illum sit
+            accusantium qui porro ea deleniti, veniam nulla suscipit eaque doloremque velit perferendis officia commodi
+            facere reiciendis. Ex omnis accusantium ipsa quos earum, nesciunt iusto praesentium voluptas dicta
+            dignissimos laboriosam voluptate, eos cum accusamus modi officia vel eius? Optio et earum sunt dicta maiores
+            perspiciatis reiciendis rerum vel alias, ratione enim animi laudantium voluptatum nemo, voluptatem qui
+            facilis? Modi, eaque soluta totam accusantium dolor magnam error mollitia sunt quidem enim nostrum harum
+            quod ipsum asperiores omnis rerum quam necessitatibus quia, delectus tempora nesciunt aliquid optio ad? Ex
+            illum voluptas et eius nam incidunt sit reprehenderit molestias repudiandae illo? Blanditiis quisquam rem
+            veniam aliquam harum cum aut distinctio, iure ipsum, aliquid, sed error perspiciatis quaerat ab nesciunt
+            eius. Ducimus in sapiente odit pariatur eveniet odio vitae nam? Eveniet dignissimos rem mollitia!</p>
+    </div>
+    <button id="btn" onclick="touchhide()">
+        show / hide
+    </button>
+    <script>
+
+        // 1] :-
+        // let cot = document.getElementById('para');
+        // cot.addEventListener('mouseover', function() {
+        //     alert('Mouse pointer inside');
+        // })
+
+
+        let pet = document.getElementById('sud');
+        pet.addEventListener('mouseout', function() {
+            alert(' You are not allowed to leave');
+        })
+
+
+        function touchhide() {
+            let cot = document.getElementById('para');
+
+            if (cot.style.display != 'none') {
+                cot.style.display = 'none';
+            }
+
+
+            else {
+                cot.style.display = 'block';
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

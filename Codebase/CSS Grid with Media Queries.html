@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grd using Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'nav nav nav nav'
+                'section aside aside aside'
+                'footer footer footer footer';
+        }
+
+        @media only screen and (max-width: 200px) {
+            body {
+                background-color: orange;
+            }
+        }
+
+        @media only screen and (min-width:200px) and (max-width: 400px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        @media only screen and (min-width:400px) and (max-width: 700px) {
+            body {
+                background-color: pink;
+            }
+        }
+
+        @media only screen and (min-width:700px) {
+            body {
+                background-color: yellow;
+            }
+        }
+
+        #nav {
+            grid-area: nav;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        #span {
+            grid-area: span;
+        }
+
+        .bdr {
+            border: 2px solid red;
+            padding: 10px;
+            background-color: burlywood;
+        }
+
+        footer{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About Us</span>
+            <span>Contact</span>
+            <span>Services</span>
+        </nav>
+
+        <section class="bdr">
+            <h2>Learn Whatever You Want Under One Roof</h2>
+        </section>
+
+        <aside class="bdr">
+            <h2>Read Books For Betterment Of Your Future</h2>
+        </aside>
+    </div>
+<footer class="bdr">
+    copuright SudarshanIndustriesLimited.in
+</footer>
+</body>
+
+</html>

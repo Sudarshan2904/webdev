@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Arrow functions in JS </title>
+</head>
+
+<body>
+    <div class="con">this is arrow function tut
+
+    </div>
+    <script>
+        // 1] Traditional way  : 
+        // function good(){
+        //     console.log("goood evening")
+        // }
+        // good();
+
+        //  1]  one Shortcut to above by Arrow Function ;
+        // good = () => {
+        //     console.log("good evening");
+        // }
+        // good();
+
+        //  1]  another Shortcut to above by Arrow Function ;
+        let good = () => console.log('good Mornning');
+        good();
+
+
+        setTimeout(() => {
+            console.log("You are tremendous");
+        }, 3500);
+
+
+        // 2] Traditional way :-
+        // let minuse = (a, c) => {
+        //     return a - c;
+        // }
+
+
+        // 2]  Shortcut to above by Arrow Function 
+        let minuse = (a, b) => a - b;
+
+        // 3]
+        let half = a => a / 4;
+
+        // 4]
+        let outside = {
+            hellomark: "Hi",
+            name: ["Sud", "carry", "Harry", "emma"],
+            inside() {
+                this.name.forEach((person) => {
+                    console.log(this.hellomark + "Good Morning to " + person + ".");
+
+                });
+            }
+        }
+        outside.inside();
+
+
+
+    </script>
+</body>
+
+</html>

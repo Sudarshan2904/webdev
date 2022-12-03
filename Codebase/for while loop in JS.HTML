@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> For, While and other loops in JS </title>
+</head>
+
+<body>
+    <div class="con">
+        <h1>This is looking rich</h1>
+    </div>
+    <script>
+
+        console.log('Live server has been started');
+        // * For loop in js 
+        // 1]
+        let i = 0;
+        for (i = 0; i < 4; i++) {
+            console.log(i);
+        }
+
+
+        // 2]
+        let gang = ['raj', 'sid', 'jon', 'jim', 'don'];
+        for (let i = 0; i < gang.length; i++) {
+            console.log("Hello Friend, " + gang[i]);
+        }
+
+
+        // 3]
+        // gang.forEach(function f(roll) {
+        //     console.log("hello Friend, " + roll);
+        // })
+        // foreach function is modern way to solve problem of for loop.
+
+
+        // 4]
+        for (piece of gang) {
+            console.log("God Bless you Friend, " + piece);
+        }
+        // for of loop is another modern and simple way to do this.
+
+
+        // 5]
+        let boy = {
+            name: "sud",
+            salary: 200000,
+            performance: "High-Tech"
+        }
+
+        for (key in boy) {
+            console.log(` the ${key} of boy is ${boy[key]}`);
+        }
+        // Use this loop to iterate over objects in js.
+
+
+
+        // While loop in js.
+        let j = 0;
+        while (j < 6) {
+            console.log(`${j} is less than 6`);
+            j++;
+        }
+
+
+
+        // do while loop in js.
+        let k = 45;
+        do {
+            console.log(`${k} is less than 5 amd we have entered in a loop`);
+            k++;
+        }
+        while (k < 5);
+
+        // Difference between while & do-while loop is whatever the condition is true or false in do-while loop, the loop will definitely execute it at the first side and then further condition checking is there. 
+    </script>
+</body>
+
+</html>

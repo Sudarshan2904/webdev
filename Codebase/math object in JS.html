@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Math Object in js</title>
+</head>
+
+<body>
+    <div class="con">
+        This is Sudarshan
+    </div>
+    <!-- 
+    E: 2.718281828459045
+    LN2: 0.6931471805599453
+    LN10: 2.302585092994046
+    LOG2E: 1.4426950408889634
+    LOG10E: 0.4342944819032518
+    PI: 3.141592653589793
+    SQRT1_2: 0.7071067811865476
+    SQRT2: 1.4142135623730951 -->
+    <script>
+        console.log('He is good');
+
+        // Printing the Math object:-
+        let m = Math;
+        console.log(m);
+
+
+        // Printing the constants in Math object:-
+        console.log("The value of Math.E is ", Math.E);
+        console.log("The value of Math.LOG2E is ", Math.LOG2E);
+
+
+        // Printing the functions in Math object:-
+        let a = 24.215;
+        let b = 45.878;
+        console.log("The value of a and b is ", a, b);
+        console.log("the value of a and b round is", Math.round(a), Math.round(b));
+        console.log("The value of 3 raised to 4 is ", Math.pow(3, 4));
+        console.log("the square root  of 169 is ", Math.sqrt(169));
+
+        // ceil and floor functions :-
+        // Math.ceil function rounds up the number to nearest largest integer.
+        // Math.floor function rounds up the number to largest largest integer.
+        console.log("The value of number rounded to the nearest integer is", Math.ceil(6.9));
+        console.log("The value of number rounded to the nearest integer is", Math.floor(6.9));
+
+        console.log("The value of number rounded to the nearest integer is", Math.ceil(2.5));
+        console.log("The value of number rounded to the nearest integer is", Math.floor(2.5));
+
+
+
+        // Absolute function  :- 
+        console.log("Absolute value of given number is ", Math.abs(-5.667));
+
+        // Trigonometric functions :- 
+        console.log("value of sin(PI/2) is :", Math.sin(Math.PI / 2));
+        console.log("value of tan(PI/2) is :", Math.tan(Math.PI / 2));
+
+        // min max function :- 
+        console.log("minimum value out of 4,89,7 is ", Math.min(4, 89, 7));
+        console.log("maximum value out of 4,89,7 is ", Math.max(4, 89, 7));
+
+        // Generation of a random number :- 
+        //  Formula :- Random number between(a, b) =a + (b-a)*Math.random();
+        let r = Math.random();
+        let c = 40;
+        let d = 60;
+        let range= c + (d-c)*Math.random();
+        console.log("The random number is ", r);
+        console.log("The random number is ", range);
+
+    </script>
+</body>
+
+</html>
